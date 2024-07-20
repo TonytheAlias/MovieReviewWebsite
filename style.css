@@ -2,6 +2,15 @@
     font-family: 'Baloo';
     src: url(fonts/Baloo/Baloo-Regular.ttf);
 }
+@font-face {
+    font-family: "SF-Rounded";
+    src: url(fonts/SF-Pro-Rounded-Regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -13,8 +22,13 @@
     border: 8px solid red;
 }
 
-
 img{
     height: 50px;
     width: 50px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
