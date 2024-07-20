@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: 'Baloo';
+    src: url(fonts/Baloo/Baloo-Regular.ttf);
+}
 .header{
     display: flex;
     justify-content: space-between;
