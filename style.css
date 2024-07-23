@@ -6,6 +6,15 @@
     font-family: "SF-Rounded";
     src: url(fonts/SF-Pro-Rounded-Regular.otf);
 }
+:root{
+    --font-page: "Baloo";
+    --font-message: "SF-Rounded"; 
+    --clr-background: #7CA1FF; 
+    --clr-darkBlue: #2C497F; 
+    --clr-lightBlue: #3F58FF; 
+    --clr-footer: #4876B3; 
+    --clr-text: #fff; 
+}
 *{
     margin: 0;
     padding: 0;
@@ -15,11 +24,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 8px 0px;
+    font-family: var(--font-page);
+    background-color: var(--clr-background);
+    color: var(--clr-text);
+    border-bottom: 8px solid #fff;
 }
 .header .left, .right{
     display: flex;
     justify-content: space-between;
-    border: 8px solid red;
+    gap: 5px;
+}
+#BrandName{
+    margin-top: 10px;
+    text-align: center;
 }
 
 img{
@@ -27,8 +45,20 @@ img{
     width: 50px;
 }
 ul{
+    margin-top: 5px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
+button{
+   height: 2rem;
+   width: 4.5rem;
+   text-align: center;
+   font-family: var(--font-page);
+   background-color: var(--clr-background);
+   color: var(--clr-text);
+   border: 2px solid #fff;
+   border-radius: 10%;
+   box-shadow: 3px 3px 8px black;
 }
