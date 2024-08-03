@@ -29,12 +29,12 @@
     background-color: var(--clr-background);
     color: var(--clr-text);
     border-bottom: 8px solid #fff;
-    cursor: pointer;
+
 }
 .header .left, .right{
     display: flex;
     justify-content: space-around;
-    max-width: 1200px;
+    cursor: pointer;
 }
 .header .left{
     gap: 5px;
@@ -61,8 +61,8 @@
    background-color: var(--clr-background);
    color: var(--clr-text);
    border: 2px solid #fff;
-   border-radius: 10%;
-   box-shadow: 3px 3px 8px black;
+   border-radius: 0.5rem;
+   cursor: pointer;
 }
 
 #header-text:hover{
@@ -76,34 +76,37 @@ font-size: 18px;
     color: var(--clr-background);
     border: 2px solid var(--clr-background);
 }
-.sliderWrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    position: relative;
+.slider-wrapper{
+   position: relative;
+    max-width: 48rem;
+    margin: 0 auto; 
 }
-.topRecentSlider{
+
+.top-recent-slider{
     display: flex;
     aspect-ratio: 16 / 9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     overflow: hidden;
+    border-radius: 0.5rem;
 }
-.topRecentSlider img{
-    flex: 1 0 100%;
+
+.top-recent-slider img{
+    display: flex;
+    flex: 1 0 100%; 
     scroll-snap-align: start;
-    object-fit: cover;
+   object-fit: cover;
 }
+
 .slider-nav{
     display: flex;
     column-gap: 1rem;
     position: absolute;
-    bottom: 1.25rem;
+    bottom: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 1; 
 }
 
 .slider-nav a{
@@ -112,4 +115,86 @@ font-size: 18px;
     border-radius: 50%;
     background-color: #fff;
     opacity: 0.75;
+    transition: opacity ease 250ms;
 }
+
+.slider-nav a:hover{
+    opacity: 1
+}
+.slider-text-1{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(15, 12, 12, 0.568), rgba(255, 255, 255, 0));;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  border-radius: 0.5rem;
+  transition: 0.4s ease-in-out;
+}
+.slider-text-1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(15, 12, 12, 0.568), rgba(255, 255, 255, 0));;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border-radius: 0.5rem;
+    transition: 0.4s ease-in-out;
+  }
+  .slider-text-2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(15, 12, 12, 0.568), rgba(255, 255, 255, 0));;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border-radius: 0.5rem;
+    transition: 0.4s ease-in-out;
+  }
+  .slider-text-3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(15, 12, 12, 0.568), rgba(255, 255, 255, 0));;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border-radius: 0.5rem;
+    transition: 0.4s ease-in-out;
+  }
+  .slider-text-4{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(15, 12, 12, 0.568), rgba(255, 255, 255, 0));;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border-radius: 0.5rem;
+    transition: 0.4s ease-in-out;
+  }
+  .slider-text-5{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(15, 12, 12, 0.568), rgba(255, 255, 255, 0));;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border-radius: 0.5rem;
+    transition: 0.4s ease-in-out;
+  }
+  .header-slider-1:hover .slider-text-1{
+    height: 100%;
+}
+
+
