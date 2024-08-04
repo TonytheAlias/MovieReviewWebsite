@@ -20,6 +20,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1, h3, p{
+    font-family: var(--font-page);
+    color: var(--clr-text);
+}
+/********************************************** HEADER *************************************/
 .header{
     display: flex;
     justify-content: space-between;
@@ -76,6 +81,8 @@ font-size: 18px;
     color: var(--clr-background);
     border: 2px solid var(--clr-background);
 }
+
+/**********************************************IMAGE SLIDER*************************************/
 .slider-wrapper{
    position: relative;
     max-width: 48rem;
@@ -121,24 +128,13 @@ font-size: 18px;
 .slider-nav a:hover{
     opacity: 1
 }
-.slider-text-1{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to bottom, rgba(15, 12, 12, 0.568), rgba(255, 255, 255, 0));;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  border-radius: 0.5rem;
-  transition: 0.4s ease-in-out;
-}
+
 .slider-text-1{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to bottom, rgba(15, 12, 12, 0.568), rgba(255, 255, 255, 0));;
+    background: linear-gradient(to bottom, rgba(5, 4, 4, 0.644), rgba(255, 255, 255, 0));;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -150,7 +146,7 @@ font-size: 18px;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to bottom, rgba(15, 12, 12, 0.568), rgba(255, 255, 255, 0));;
+    background: linear-gradient(to bottom, rgba(5, 4, 4, 0.616), rgba(255, 255, 255, 0));;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -162,7 +158,7 @@ font-size: 18px;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to bottom, rgba(15, 12, 12, 0.568), rgba(255, 255, 255, 0));;
+    background: linear-gradient(to bottom, rgba(5, 4, 4, 0.63), rgba(255, 255, 255, 0));;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -174,7 +170,7 @@ font-size: 18px;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to bottom, rgba(15, 12, 12, 0.568), rgba(255, 255, 255, 0));;
+    background: linear-gradient(to bottom, rgba(2, 1, 1, 0.719), rgba(255, 255, 255, 0));;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -186,15 +182,37 @@ font-size: 18px;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to bottom, rgba(15, 12, 12, 0.568), rgba(255, 255, 255, 0));;
+    background: linear-gradient(to bottom, rgba(7, 6, 6, 0.582), rgba(255, 255, 255, 0));;
     overflow: hidden;
     width: 100%;
     height: 0;
     border-radius: 0.5rem;
     transition: 0.4s ease-in-out;
   }
-  .header-slider-1:hover .slider-text-1{
+.header-slider-1:hover .slider-text-1{
     height: 100%;
 }
+.header-slider-2:hover .slider-text-2{
+    height: 100%;
+}
+.header-slider-3:hover .slider-text-3{
+    height: 100%;
+}
+.header-slider-4:hover .slider-text-4{
+    height: 100%;
+}
+.header-slider-5:hover .slider-text-5{
+    height: 100%;
+}
+.all-slider-text h1{
+    font-size: 40px;
+}
 
+.all-slider-text h3{
+    font-size: 25px;
+}
+
+.all-slider-text p{
+    font-size: 15px;
+}
 
