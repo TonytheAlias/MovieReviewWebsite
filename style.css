@@ -189,8 +189,9 @@ font-size: 18px;
     height: 0;
     border-radius: 0.5rem;
     transition: 0.4s ease-in-out;
-  }
-  .slider-text-2{
+}
+
+.slider-text-2{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -201,8 +202,9 @@ font-size: 18px;
     height: 0;
     border-radius: 0.5rem;
     transition: 0.4s ease-in-out;
-  }
-  .slider-text-3{
+}
+
+.slider-text-3{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -213,8 +215,9 @@ font-size: 18px;
     height: 0;
     border-radius: 0.5rem;
     transition: 0.4s ease-in-out;
-  }
-  .slider-text-4{
+}
+
+.slider-text-4{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -225,8 +228,9 @@ font-size: 18px;
     height: 0;
     border-radius: 0.5rem;
     transition: 0.4s ease-in-out;
-  }
-  .slider-text-5{
+}
+
+.slider-text-5{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -237,25 +241,32 @@ font-size: 18px;
     height: 0;
     border-radius: 0.5rem;
     transition: 0.4s ease-in-out;
-  }
+}
+
 .header-slider-1:hover .slider-text-1{
     height: 100%;
 }
+
 .header-slider-2:hover .slider-text-2{
     height: 100%;
 }
+
 .header-slider-3:hover .slider-text-3{
     height: 100%;
 }
+
 .header-slider-4:hover .slider-text-4{
     height: 100%;
 }
+
 .header-slider-5:hover .slider-text-5{
     height: 100%;
 }
+
 .all-slider-text{
     width: 75%;
 }
+
 .all-slider-text h1{
     font-size: 40px;
     padding-left: 10px;
@@ -271,4 +282,43 @@ font-size: 18px;
     padding-left: 10px;
 }
 /**********************************************TOP 10 MOVIE SLIDER*************************************/
+.top-movies-container{
+    margin-top: 50px;
+    padding: 0px 8px 0px;
+    position: relative;
+    
+}
+.arrows-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 98%;
+    transform: translateX(0%);
+    bottom: 25%;
+}
+.arrows-icon button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 100%;
+}
+.arrows-icon i{
+    font-size: 3rem;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
 
+.movie-slider{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    overflow: hidden;
+}
+.movie-slider img{
+    height: 200px;
+    width: auto;
+    border-radius: 0.5rem;
+}
