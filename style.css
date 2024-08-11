@@ -20,6 +20,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    background-color: var(--clr-background);
+}
+
 h1, h3, p{
     font-family: var(--font-page);
     color: var(--clr-text);
@@ -29,23 +33,25 @@ h1, h3, p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 8px 0px;
+    padding: 0px 15px 0px;
     font-family: var(--font-page);
     background-color: var(--clr-background);
     color: var(--clr-text);
-    border-bottom: 8px solid #fff;
-
+    gap: 20px;
 }
-.header .left, .right{
+.header .left, .center{
     display: flex;
     justify-content: space-around;
     cursor: pointer;
 }
+.left, .center, .search-bar{
+    flex-shrink: 1;
+}
 .header .left{
     gap: 5px;
 }
-.header .right, #header-text{
-    gap: 20px;
+.header .center, #header-text{
+    gap: 30px;
     margin-top: 5px;
 }
 #BrandName{
@@ -57,8 +63,53 @@ h1, h3, p{
     height: 50px;
     width: 50px;
 }
+.center{
+    padding-right: 50px;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    gap: 20px;
+    width: 20rem;
+    flex-shrink: 2;
+}
+.search-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.2rem;
+    max-width: 10rem;
+    gap: 5px;
+    background-color: rgba(255, 255, 255, 0.267);
+    backdrop-filter: blur(20px);
+    border-radius: 60px ;
+    flex-shrink: 3;
+}
+.search-bar i{
+    padding-left: 3px;
+}
 
+.search-bar input{
+    flex: 1;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 0px 5px 0px;
+    cursor: pointer;
+    height: 1.2rem;
+    max-width: 8rem;
+}
+
+.search-bar input::placeholder{
+    color: rgba(255, 255, 255, 0.774);
+    font-family: var(--font-page);
+    font-size: 12px;
+}
 #join{
+   flex-shrink: 1;
    height: 2rem;
    width: 4.5rem;
    text-align: center;
@@ -75,8 +126,6 @@ font-size: 18px;
 }
 
 #join:hover{
-    height: 2.5rem;
-    width: 5rem;
     background-color: #fff;
     color: var(--clr-background);
     border: 2px solid var(--clr-background);
@@ -204,15 +253,22 @@ font-size: 18px;
 .header-slider-5:hover .slider-text-5{
     height: 100%;
 }
+.all-slider-text{
+    width: 75%;
+}
 .all-slider-text h1{
     font-size: 40px;
+    padding-left: 10px;
 }
 
 .all-slider-text h3{
     font-size: 25px;
+    padding-left: 10px;
 }
 
 .all-slider-text p{
     font-size: 15px;
+    padding-left: 10px;
 }
+/**********************************************TOP 10 MOVIE SLIDER*************************************/
 
