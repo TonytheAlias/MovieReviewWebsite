@@ -302,7 +302,8 @@ font-size: 18px;
     gap: 15px;
     width: 100%;
     border-radius: 0.5rem;
-    transform: translateX(-000%);
+    transform: translateX(calc(var(--slider-index) * -100%));
+    --slider-index:0; 
 }
 .movie-slider > img{
     height: 250px;
