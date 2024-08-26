@@ -297,13 +297,16 @@ font-size: 18px;
     border-radius: 0.5rem;
 }
 .movie-slider{
+    --items-per-screen: 7; 
+    --slider-index:0; 
     display: flex;
     margin-top: 10px;
     gap: 15px;
     width: 100%;
     border-radius: 0.5rem;
     transform: translateX(calc(var(--slider-index) * -100%));
-    --slider-index:0; 
+    transition: transform 250ms ease-in-out;
+
 }
 .movie-slider > img{
     height: 250px;
