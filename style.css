@@ -453,16 +453,40 @@ font-size: 18px;
 
 .articles-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-top: 20px;
     padding: 0px 20px 0px;
     gap: 10px;
 }
 .articles{
-    height: 100px;
+    display: flex;
+    gap: 10px;
+    height: 150px;
     width: 50rem;
     border: 3px solid white;
     border-radius: 0.5rem;
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: var(--clr-darkBlue);
+}
+.articles > img{
+    height: 125px;
+    width: 110px;
+    border-radius: 0.5rem;
+}
+.articles a{
+    text-decoration: none;
+}
+.articles p{
+    color: var(--clr-footer-text);
+    font-size: 13px ;
+}
+.articles a:hover{
+    text-decoration: underline;
+    text-decoration-color:var(--clr-footer);
+    text-decoration-thickness:2px ;
+    transition: text-decoration 150ms ease-in-out;
 }
 
 .community-container{
