@@ -1,1 +1,6 @@
-This website will allow users to keep track of movies and tv shows they haved watched or plan to watch. It will also allow users to rate and review those movies and tv shows. They can also view the latest articles on upcoming movies and tv shows. The website will consists of various pages such as a login/sign up page, settings, browsing categories, account information. 
+This website's landing page used html, css, and js. To build the landing page similer to Metacritic or Letrboxd. The landing page consists of a header, body, and footer, which are all aligned through flex box. Under the header is a preview of the top upcoming movies that are viewable through the image slider, which is responsive and allow users to see the movie's information when hover over by mouse. The next section of the page is an image carasoul slider that allow users to click the arrows to search through the top ten all time movies, recently release movies, and the most recommended movies to watch. The third section of the body, allow users to see the latest articles that have recently came out and join the community through the website to interact with other users and stay up to date on the latest and most enticipated movies even before they are viewable on the website. The final section of the page is the footer, which reiterates everything currently on the page and more such as an FAQ, about, contact us, and privacy terms. It also shows the company's copyright.
+
+
+
+
+Language used: HTML, CSS, JS
