@@ -14,6 +14,7 @@
     --clr-lightBlue: #3F58FF; 
     --clr-footer: #4876B3; 
     --clr-text: #fff; 
+    --clr-footer-text:#c9c8c8; 
 }
 *{
     margin: 0;
@@ -286,6 +287,7 @@ font-size: 18px;
     margin-top: 50px;
     margin-bottom: 0;
     padding: 0px 8px 0px;
+    letter-spacing: 2px;
 }
 
 .top-movies-container{
@@ -361,6 +363,7 @@ font-size: 18px;
  height: 15rem;
  width: 12rem;
  text-align: center;
+ letter-spacing: 2px;
  border: 2px solid white;
  border-radius: 25%;
  padding-top: 15px;
@@ -438,12 +441,14 @@ font-size: 18px;
 .lower-content{
     display: flex;
     align-items: center;
+    gap: 25px;
 }
 .latest-articles{
     justify-self: start;
     margin-top: 50px;
     margin-bottom: 20px;
     margin-left: 8px;
+    letter-spacing: 2px;
 }
 
 .articles-container{
@@ -478,6 +483,7 @@ font-size: 18px;
     margin-top: 10px;
     font-size: 2rem;
     line-height: 1.8;
+    letter-spacing: 2px;
 }
 .socials{
     display: flex;
@@ -496,4 +502,54 @@ font-size: 18px;
     margin-top: 50px;
     cursor: pointer;
 }
+/********************************************** Footer *************************************/
+.footer{
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    background-color: var(--clr-footer);
+    gap: 60px;
+    padding-right: 50px;
+}
+.copyright{
+    margin-left: 15px;
+    width: 20rem;
+}
+.copyright > img{
+    height: 100px;
+    width: 100px;
+    margin-left: 60px;
+}
+.copyright > h4{
+    font-family: var(--font-page);
+    color: var(--clr-text);
+    letter-spacing: 2px;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    width: 100%;
+}
+
+.quick-links , .explore, .stay-connected{
+    font-family: var(--font-page);
+    text-decoration: none; 
+}
+.quick-links ul, .explore ul, .stay-connected ul{
+    list-style-type: none;
+    color: var(--clr-footer-text);
+    cursor: pointer;
+}
+.quick-links h4, .explore h4, .stay-connected h4{
+    letter-spacing: 2px;
+    color: var(--clr-text);
+}
+.quick-links li:hover, .explore li:hover, .stay-connected li:hover{
+    color: var(--clr-text);
+    transition:color 150ms ease-in-out;
+}
+
+
 
